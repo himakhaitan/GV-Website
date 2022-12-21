@@ -1,5 +1,8 @@
 import Head from "next/head";
 import classes from "../styles/Home.module.css";
+import Button from "../components/Button";
+
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -18,7 +21,7 @@ export default function Home() {
             <h1 className='color-secondary'>Digitize</h1>
             <h1>Ideas.</h1>
             <h3 className='color-secondary margin-top-small'>
-             & sharing it <span className="color-primary">with the World</span>!
+              & share it <span className='color-primary'>with the World</span>!
             </h3>
           </div>
           <div className={classes.home_first_secondary}>
@@ -32,8 +35,16 @@ export default function Home() {
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere curae; Integer a fermentum tortor.
             </p>
-            <div className={classes.home_first_cta}>
-
+            <div className={classes.home_first_cta + " margin-bottom-medium"}>
+              <Button
+                isLink={true}
+                href='/'
+                isIcon={true}
+                theme='primary'
+                text='Get Started'
+                Icon={FiArrowUpRight}
+                className="margin-right-medium"
+              />
             </div>
           </div>
         </div>

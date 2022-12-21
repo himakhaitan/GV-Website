@@ -5,6 +5,12 @@
   grid-column-gap: 10rem;
 }
 
+.home_first_cta {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2rem;
+}
+
 .home_first_secondary {
   justify-self: right;
   display: flex;
