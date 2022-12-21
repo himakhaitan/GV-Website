@@ -29,7 +29,7 @@ const Navigation = ({}) => {
       </div>
       <div className={classes.nav_item}>
         <Link href='/'>
-          <h4 className={classes.nav_link}>Contact Us</h4>
+          <h4 className={classes.nav_link}>Let's talk</h4>
         </Link>
       </div>
     </section>

@@ -1,0 +1,17 @@
+.home_first {
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 10rem;
+}
+
+.home_first_secondary {
+  justify-self: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home_first_text {
+  text-align: right;
+}

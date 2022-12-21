@@ -12,7 +12,31 @@ export default function Home() {
         />
       </Head>
       <section className={classes.home}>
-        
+        <div className={classes.home_first}>
+          <div>
+            <h1>We</h1>
+            <h1 className='color-secondary'>Digitize</h1>
+            <h1>Ideas.</h1>
+            <h3 className='color-secondary margin-top-small'>
+             & sharing it <span className="color-primary">with the World</span>!
+            </h3>
+          </div>
+          <div className={classes.home_first_secondary}>
+            <p className={classes.home_first_text + " margin-top-large"}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              non dolor tempus, tincidunt purus in, venenatis magna. Curabitur
+              scelerisque sem sed ex convallis ultricies. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae;
+              Integer tempor lorem ornare sagittis efficitur. Ut quis maximus
+              turpis. Sed molestie libero nunc, id tincidunt arcu egestas non.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere curae; Integer a fermentum tortor.
+            </p>
+            <div className={classes.home_first_cta}>
+
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
