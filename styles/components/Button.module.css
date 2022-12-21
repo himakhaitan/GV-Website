@@ -8,8 +8,8 @@
 }
 
 .btn:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5rem);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn_content {
@@ -31,7 +31,11 @@
 }
 
 .secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
 }
 
 .tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
 }

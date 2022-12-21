@@ -3,6 +3,10 @@ import classes from "../styles/Home.module.css";
 import Button from "../components/Button";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {SiInstagram} from "react-icons/si";
+
+import Social from "../components/Social";
 
 export default function Home() {
   return (
@@ -43,8 +47,13 @@ export default function Home() {
                 theme='primary'
                 text='Get Started'
                 Icon={FiArrowUpRight}
-                className="margin-right-medium"
+                className='margin-right-medium'
               />
+              <div className={classes.home_first_social}>
+                <Social href='/' theme='primary' Icon={FaTwitter} />
+                <Social href='/' theme='primary' Icon={SiInstagram} />
+                <Social href='/' theme='primary' Icon={FaLinkedinIn} />
+              </div>
             </div>
           </div>
         </div>

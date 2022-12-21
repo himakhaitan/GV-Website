@@ -8,6 +8,7 @@
 .home_first_cta {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   column-gap: 2rem;
 }
 
@@ -16,6 +17,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.home_first_social {
+  display: flex;
+  column-gap: 0.6rem;
 }
 
 .home_first_text {
