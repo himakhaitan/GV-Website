@@ -1,7 +1,8 @@
 :root {
   --color-primary: #121212;
   --color-secondary: #8c75ff;
-  --color-tertiary: #ffffff;
+  --color-tertiary: #fbfbfb;
+  --color-grey: #e2e2e2;
 
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Major Mono Display", monospace;
@@ -56,6 +57,7 @@ h3 {
 }
 
 h4 {
+  font-weight: 400;
 }
 
 h5 {
