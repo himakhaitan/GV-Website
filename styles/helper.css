@@ -58,6 +58,10 @@
   color: var(--color-secondary);
 }
 
+.color-grey {
+  color: var(--color-grey);
+}
+
 .color-tertiary {
   color: var(--color-tertiary);
 }

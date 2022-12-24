@@ -1,4 +1,4 @@
-import classes from "../styles/components/Navigation.module.css";
+import classes from "../styles/layouts/Navigation.module.css";
 
 // Importing Next Components
 import Image from "next/image";

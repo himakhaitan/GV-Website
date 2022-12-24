@@ -1,10 +1,9 @@
 import Head from "next/head";
 import classes from "../styles/Home.module.css";
 import Button from "../components/Button";
-
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {SiInstagram} from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
 
 import Social from "../components/Social";
 
@@ -57,6 +56,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className={classes.home_second}></div>
       </section>
     </>
   );

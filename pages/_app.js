@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Navigation from "../components/Navigation";
+import Navigation from "../layouts/Navigation";
 import "../styles/globals.css";
 import "../styles/helper.css";
+import Footer from "../layouts/Footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
       <main>
         <Navigation />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );

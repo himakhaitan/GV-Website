@@ -1,3 +1,4 @@
+/* First Section */
 .home_first {
   padding: 8rem;
   display: grid;
@@ -26,4 +27,10 @@
 
 .home_first_text {
   text-align: right;
+}
+
+/* Second Section */
+
+.home_second {
+  padding: 8rem;
 }
