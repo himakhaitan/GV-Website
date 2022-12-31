@@ -61,11 +61,14 @@ export default function Home() {
             className={classes.home_second_img}
             src='/images/display/home.jpeg'
           />
-          <Link href="/">
+          <Link href='/'>
             <div className={classes.home_second_cta}>
               <h3 className='color-tertiary'>Have a Look!</h3>
             </div>
           </Link>
+        </div>
+        <div className={classes.home_third}>
+          <h2 className={"color-secondary " + classes.home_third_text}>Discuss <span className="color-tertiary">Your Ideas • </span>Discuss <span className="color-tertiary">Your Ideas • </span>Discuss Your Ideas</h2>
         </div>
       </section>
     </>
