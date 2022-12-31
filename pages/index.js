@@ -6,7 +6,7 @@ import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
 
 import Social from "../components/Social";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -56,7 +56,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={classes.home_second}></div>
+        <div className={classes.home_second}>
+          <img
+            className={classes.home_second_img}
+            src='/images/display/home.jpeg'
+          />
+          <Link href="/">
+            <div className={classes.home_second_cta}>
+              <h3 className='color-tertiary'>Have a Look!</h3>
+            </div>
+          </Link>
+        </div>
       </section>
     </>
   );
