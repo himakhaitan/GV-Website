@@ -19,19 +19,24 @@ const ServiceItem = ({ Icon, text }) => {
   );
 };
 
-const ServiceBar = ({ text }) => {
+const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
   return (
-    <div className={classes.service_bar}>
-      <div>
-        <h3 className={classes.service_bar_head}>
-          {text}
-          <span>•</span>
-        </h3>
+    <>
+      <div className={classes.service_bar}>
+        <div>
+          <h3 className={classes.service_bar_head}>
+            {text}
+            <span>•</span>
+          </h3>
+        </div>
+        <div className={classes.service_bar_icon}>
+          <BsArrowUpRight />
+        </div>
+        <div className={classes.service_bar_img}>
+          <img src={image} />
+        </div>
       </div>
-      <div className={classes.service_bar_icon}>
-        <BsArrowUpRight />
-      </div>
-    </div>
+    </>
   );
 };
 
@@ -124,9 +129,15 @@ export default function Home() {
             </div>
           </div>
           <div className={classes.home_fourth_sec}>
-            <ServiceBar text='Web DEsIGn' />
-            <ServiceBar text='bRand DEsIGn' />
-            <ServiceBar text='Graphic DEsIGn' />
+            <ServiceBar text='Web DEsIGn' image='/images/services/web.png' />
+            <ServiceBar
+              text='bRand DEsIGn'
+              image='/images/services/branddesign.png'
+            />
+            <ServiceBar
+              text='Graphic DEsIGn'
+              image='/images/services/graphicdesign.png'
+            />
           </div>
         </div>
       </section>
