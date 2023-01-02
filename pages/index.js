@@ -6,18 +6,18 @@ import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
-
+import Label from "../components/Label";
 import Social from "../components/Social";
 import Link from "next/link";
 
-const ServiceItem = ({ Icon, text }) => {
-  return (
-    <div className={classes.service_item}>
-      <div className={classes.service_item_icon}>{Icon}</div>
-      <h5 className={`color-tertiary ${classes.service_item_text}`}>{text}</h5>
-    </div>
-  );
-};
+// const ServiceItem = ({ Icon, text }) => {
+//   return (
+//     <div className={classes.service_item}>
+//       <div className={classes.service_item_icon}>{Icon}</div>
+//       <h5 className={`color-tertiary ${classes.service_item_text}`}>{text}</h5>
+//     </div>
+//   );
+// };
 
 const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
   return (
@@ -93,7 +93,7 @@ export default function Home() {
             src='/images/display/home.jpeg'
           />
           <Link href='/'>
-            <div className={classes.home_second_cta}>
+            <div className={classes.home_second_cta + " " + classes.home_cta}>
               <h3 className='color-tertiary'>Have a Look!</h3>
             </div>
           </Link>
@@ -122,10 +122,10 @@ export default function Home() {
               </p>
             </div>
             <div className={classes.home_fourth_right}>
-              <ServiceItem Icon={<TfiWorld />} text='Development' />
-              <ServiceItem Icon={<TfiWorld />} text='Design' />
-              <ServiceItem Icon={<TfiWorld />} text='Marketing' />
-              <ServiceItem Icon={<TfiWorld />} text='Management' />
+              <Label Icon={<TfiWorld />} text='Development' />
+              <Label Icon={<TfiWorld />} text='Design' />
+              <Label Icon={<TfiWorld />} text='Marketing' />
+              <Label Icon={<TfiWorld />} text='Management' />
             </div>
           </div>
           <div className={classes.home_fourth_sec}>
@@ -139,6 +139,43 @@ export default function Home() {
               image='/images/services/graphicdesign.png'
             />
           </div>
+        </div>
+        <div className={classes.home_fifth}>
+          <div className={classes.home_fifth_container}>
+            <h2>
+              A <span className={classes.home_fifth_text}>cReATIVe</span> mind
+              knows how to do the{" "}
+              <span className={classes.home_fifth_text}>RIgHt THiNg</span> at
+              the <span className={classes.home_fifth_text}>RIgHt plACe</span>{" "}
+              and the{" "}
+              <span className={classes.home_fifth_text}>RIgHt TiMe</span>.
+            </h2>
+            <Link href='/'>
+              <div className={classes.home_fifth_cta + " " + classes.home_cta}>
+                <h3 className='color-tertiary'>How bout'a Coffee?</h3>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className={classes.home_sixth}>
+          <div className={classes.home_sixth_header}>
+            <div>
+              <h1 className='margin-bottom-large color-tertiary'>
+                Best <span className='color-secondary'>Projects</span>.
+              </h1>
+              <div className={classes.home_sixth_labels}>
+                <Label Icon={<TfiWorld />} text='Development' />
+                <Label Icon={<TfiWorld />} text='Design' />
+                <Label Icon={<TfiWorld />} text='Marketing' />
+                <Label Icon={<TfiWorld />} text='Management' />
+              </div>
+            </div>
+            <p className={classes.home_sixth_text + " margin-bottom-medium"}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              non dolor tempus consectetur ipsum dolor sit amet, consectetur adipiscin.
+            </p>
+          </div>
+          <div></div>
         </div>
       </section>
     </>
