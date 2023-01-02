@@ -6,10 +6,6 @@
   grid-column-gap: 3rem;
 }
 
-.footer_text {
-  font-size: 1.8rem;
-  font-weight: 300;
-}
 
 .footer_social {
   display: flex;

@@ -3,7 +3,9 @@
   --color-secondary: #8c75ff;
   --color-tertiary: #ffffff;
   --color-grey: #e2e2e2;
-  --color-grey-dark: #a8a8a8;
+  --color-grey-light: rgb(145, 145, 145);
+  --color-grey-mid: rgb(28, 28, 28);
+  --color-grey-dark: #151515;
 
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Major Mono Display", monospace;
@@ -32,8 +34,8 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -55,6 +57,7 @@ h1 {
 }
 
 h2 {
+  font-size: 5rem;
 }
 
 h3 {

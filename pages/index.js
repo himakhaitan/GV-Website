@@ -4,9 +4,37 @@ import Button from "../components/Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
+import { BsArrowUpRight } from "react-icons/bs";
+import { TfiWorld } from "react-icons/tfi";
 
 import Social from "../components/Social";
 import Link from "next/link";
+
+const ServiceItem = ({ Icon, text }) => {
+  return (
+    <div className={classes.service_item}>
+      <div className={classes.service_item_icon}>{Icon}</div>
+      <h5 className={`color-tertiary ${classes.service_item_text}`}>{text}</h5>
+    </div>
+  );
+};
+
+const ServiceBar = ({ text }) => {
+  return (
+    <div className={classes.service_bar}>
+      <div>
+        <h3 className={classes.service_bar_head}>
+          {text}
+          <span>•</span>
+        </h3>
+      </div>
+      <div className={classes.service_bar_icon}>
+        <BsArrowUpRight />
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -35,8 +63,6 @@ export default function Home() {
               primis in faucibus orci luctus et ultrices posuere cubilia curae;
               Integer tempor lorem ornare sagittis efficitur. Ut quis maximus
               turpis. Sed molestie libero nunc, id tincidunt arcu egestas non.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere curae; Integer a fermentum tortor.
             </p>
             <div className={classes.home_first_cta + " margin-bottom-medium"}>
               <Button
@@ -68,7 +94,40 @@ export default function Home() {
           </Link>
         </div>
         <div className={classes.home_third}>
-          <h2 className={"color-secondary " + classes.home_third_text}>Discuss <span className="color-tertiary">Your Ideas • </span>Discuss <span className="color-tertiary">Your Ideas • </span>Discuss Your Ideas</h2>
+          <h2 className={"color-secondary " + classes.home_third_text}>
+            Discuss <span className='color-tertiary'>YouR Ideas • </span>Discuss{" "}
+            <span className='color-tertiary'>YouR Ideas • </span>Discuss{" "}
+            <span className='color-tertiary'>YouR Ideas • </span>
+            Discuss <span className='color-tertiary'>YouR Ideas • </span>
+            Discuss <span className='color-tertiary'>YouR Ideas • </span>
+            Discuss <span className='color-tertiary'>YouR Ideas • </span>
+          </h2>
+        </div>
+        <div className={classes.home_fourth}>
+          <div className={classes.home_fourth_prim + " margin-bottom-large"}>
+            <div className={classes.home_fourth_left}>
+              <h1 className={`color-tertiary margin-bottom-small`}>
+                <span className='color-secondary'>Our </span>Services
+                <span className='color-secondary'>.</span>
+              </h1>
+              <p className={classes.home_fourth_text}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                non dolor tempus consectetur adipiscing elit. Aenean non dolor
+                tempus.
+              </p>
+            </div>
+            <div className={classes.home_fourth_right}>
+              <ServiceItem Icon={<TfiWorld />} text='Development' />
+              <ServiceItem Icon={<TfiWorld />} text='Design' />
+              <ServiceItem Icon={<TfiWorld />} text='Marketing' />
+              <ServiceItem Icon={<TfiWorld />} text='Management' />
+            </div>
+          </div>
+          <div className={classes.home_fourth_sec}>
+            <ServiceBar text='Web DEsIGn' />
+            <ServiceBar text='bRand DEsIGn' />
+            <ServiceBar text='Graphic DEsIGn' />
+          </div>
         </div>
       </section>
     </>
