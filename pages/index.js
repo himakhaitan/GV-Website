@@ -108,6 +108,7 @@ export default function Home() {
             Discuss <span className='color-tertiary'>YouR Ideas • </span>
           </h2>
         </div>
+
         <div className={classes.home_fourth}>
           <div className={classes.home_fourth_prim + " margin-bottom-large"}>
             <div className={classes.home_fourth_left}>
@@ -157,6 +158,45 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className={classes.home_clientele}>
+          <div className={classes.home_clientele_head}>
+            <h2 className='color-tertiary'>
+              Our <span className='color-secondary'>Clientele</span>. Those who
+              <span className='color-secondary'> trusted us </span>first.
+            </h2>
+            <p className='margin-top-small color-grey'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              non dolor tempus consectetur ipsum dolor sit amet, consectetur
+              adipiscin.
+            </p>
+          </div>
+          <div className={classes.home_clientele_div + " margin-top-large"}>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/21by72.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/ivy.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/anujgotrich.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/audacity.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/maharani.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img src='/images/clients/fourpillars.png' />
+            </div>
+            <div className={classes.home_clientele_item}>
+              <img
+                src='/images/clients/1point6vc.png'
+                className={classes.invert}
+              />
+            </div>
+          </div>
+        </div>
         <div className={classes.home_sixth}>
           <div className={classes.home_sixth_header}>
             <div>
@@ -172,10 +212,88 @@ export default function Home() {
             </div>
             <p className={classes.home_sixth_text + " margin-bottom-medium"}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              non dolor tempus consectetur ipsum dolor sit amet, consectetur adipiscin.
+              non dolor tempus consectetur ipsum dolor sit amet, consectetur
+              adipiscin.
             </p>
           </div>
-          <div></div>
+          <div className={classes.home_sixth_display + " margin-top-large"}>
+            <Link
+              href='/'
+              className={classes.home_sixth_one + " " + classes.home_sixth_item}
+            >
+              <div>
+                <img
+                  className={classes.home_sixth_img}
+                  src='/images/services/design.jpeg'
+                />
+                <div className={classes.home_sixth_cta}>
+                  <BsArrowUpRight />
+                </div>
+              </div>
+            </Link>
+            <Link
+              href='/'
+              className={classes.home_sixth_two + " " + classes.home_sixth_item}
+            >
+              <div>
+                <img
+                  className={classes.home_sixth_img}
+                  src='/images/services/webdesign.png'
+                />
+                <div className={classes.home_sixth_cta}>
+                  <BsArrowUpRight />
+                </div>
+              </div>
+            </Link>
+            <Link
+              href='/'
+              className={
+                classes.home_sixth_three + " " + classes.home_sixth_item
+              }
+            >
+              <div>
+                <img
+                  className={classes.home_sixth_img}
+                  src='/images/services/graphicdesign.png'
+                />
+                <div className={classes.home_sixth_cta}>
+                  <BsArrowUpRight />
+                </div>
+              </div>
+            </Link>
+            <Link
+              href='/'
+              className={
+                classes.home_sixth_four + " " + classes.home_sixth_item
+              }
+            >
+              <div>
+                <img
+                  className={classes.home_sixth_img}
+                  src='/images/services/branddesign.png'
+                />
+                <div className={classes.home_sixth_cta}>
+                  <BsArrowUpRight />
+                </div>
+              </div>
+            </Link>
+            <Link
+              href='/'
+              className={
+                classes.home_sixth_five + " " + classes.home_sixth_item
+              }
+            >
+              <div>
+                <img
+                  className={classes.home_sixth_img}
+                  src='/images/services/web.png'
+                />
+                <div className={classes.home_sixth_cta}>
+                  <BsArrowUpRight />
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
     </>
