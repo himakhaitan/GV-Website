@@ -9,7 +9,7 @@ import { TfiWorld } from "react-icons/tfi";
 import Label from "../components/Label";
 import Social from "../components/Social";
 import Link from "next/link";
-
+import { TypeAnimation } from 'react-type-animation';
 // const ServiceItem = ({ Icon, text }) => {
 //   return (
 //     <div className={classes.service_item}>
@@ -52,16 +52,25 @@ export default function Home() {
       </Head>
       <section className={classes.home}>
         <div className={classes.home_first}>
-          <div>
-            <h1>We</h1>
-            <h1 className='color-secondary'>Digitize</h1>
-            <h1>Ideas.</h1>
-            <h3 className='color-secondary margin-top-small'>
-              & share it <span className='color-primary'>with the World</span>!
-            </h3>
-          </div>
+          <div className="text" style={{width:'40em',}}>
+        <TypeAnimation   className='color-secondary'
+    // Same String at the start will only be typed once, initially
+    sequence={[
+    'WE DIGITIZE IDEAS WITH CREATIVITY.',
+    1000,
+    'AND SHARE IT WITH THE WORLD !!',
+    1000,
+   
+    ]}
+    speed={1} // Custom Speed from 1-99 - Default Speed: 20
+    style={{ fontSize: '67px' ,fontWeight:'bold'}}
+    wrapper="span" // Animation will be rendered as a <span>
+    repeat={Infinity} // Repeat this Animation Sequence infinitely
+  />
+      </div>
           <div className={classes.home_first_secondary}>
-            <p className={classes.home_first_text + " margin-top-large"}>
+            <div className={classes.why} style={{fontSize:'50px',backgroundColor:'aliceblue',borderBottom:'5px solid black',borderRadius:'100px',paddingLeft:'5em'}}>Why We?</div>
+            <p className={classes.home_first_text + " margin-top-large"} style={{backgroundColor:'black',padding:'10px',borderRadius :'10px',color:'aliceblue'}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               non dolor tempus, tincidunt purus in, venenatis magna. Curabitur
               scelerisque sem sed ex convallis ultricies. Vestibulum ante ipsum
@@ -69,7 +78,7 @@ export default function Home() {
               Integer tempor lorem ornare sagittis efficitur. Ut quis maximus
               turpis. Sed molestie libero nunc, id tincidunt arcu egestas non.
             </p>
-            <div className={classes.home_first_cta + " margin-bottom-medium"}>
+            <div className={classes.home_first_cta + " margin-bottom-medium"} style={{paddingTop:'1em'}}>
               <Button
                 isLink={true}
                 href='/'

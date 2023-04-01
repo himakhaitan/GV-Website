@@ -1,11 +1,16 @@
 /* First Section */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 .home_first {
-  padding: 8rem;
+
+  padding: 5rem;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 10rem;
 }
-
+.why{
+  font-family: 'Abril Fatface', cursive;
+}
 .home_first_cta {
   display: flex;
   justify-content: flex-end;
@@ -26,8 +31,11 @@
 }
 
 .home_first_text {
-  text-align: right;
+  text-align: left;
+  font-size:2.2em;
+  font-family: 'Lora', serif;
 }
+
 
 /* Second Section */
 
