@@ -69,8 +69,8 @@ export default function Home() {
   />
       </div>
           <div className={classes.home_first_secondary}>
-            <div className={classes.why} style={{fontSize:'50px',backgroundColor:'aliceblue',borderBottom:'5px solid black',borderRadius:'100px',paddingLeft:'5em'}}>Why We?</div>
-            <p className={classes.home_first_text + " margin-top-large"} style={{backgroundColor:'black',padding:'10px',borderRadius :'10px',color:'aliceblue'}}>
+            <div className={classes.why} style={{fontSize:'50px',borderRadius:'100px',paddingLeft:'5em'}}>Why We?</div>
+            <p className={classes.home_first_text + " margin-top-large"} style={{padding:'10px',borderRadius :'10px',color:'black'}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               non dolor tempus, tincidunt purus in, venenatis magna. Curabitur
               scelerisque sem sed ex convallis ultricies. Vestibulum ante ipsum

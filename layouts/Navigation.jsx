@@ -11,12 +11,22 @@ const Navigation = ({}) => {
  
 
   useEffect(() => {
+    window.addEventListener('scroll', function() {
+      const offset = window.pageYOffset;
+      
+      if(offset > 75)
+       setSignUp('scroll')
+      else 
+        setSignUp('')
+    });
     window.addEventListener('scroll', myFunction);
     return () => {
       window.removeEventListener('scroll', myFunction);
     };
   }, []);
 
+  const [isSignUp, setSignUp] = useState("");
+   
 
 
   
@@ -61,13 +71,14 @@ const Navigation = ({}) => {
     </section>
     */
    <>
-   
+  
    <div className={classes.progresscontainer}>
     <div className={classes.progressbar} id="myBar"></div>
   </div>
+ 
    <div >
     
-     <div className="navbar" style={{display:'flex',justifyContent:'space-around',flexDirection:'row',backgroundColor:'aliceblue',height:'70px',paddingTop:'10px',}}>
+     <div className={ `${isSignUp}`} style={{display:'flex',justifyContent:'space-around',flexDirection:'row',backgroundColor:'aliceblue',height:'70px',paddingTop:'10px',}}>
       <div className="div">
       <div className={classes.li}>
        About Us
@@ -78,9 +89,9 @@ const Navigation = ({}) => {
        Projects
       </div>
       </div>
-      <div className={classes.logo}>
+      <div className={`${isSignUp}`}>
       <Link href='/' >
-          <Image  width='60' height='60' src='/brand/logo-1080x1080.png' />
+          <Image className={classes.logo} width='50' height='50' src='/brand/logo-1080x1080.png' />
         </Link>
 </div>
 <div className="div">
@@ -94,7 +105,7 @@ const Navigation = ({}) => {
       </div>
       </div>
      </div>
-
+     
     </div>
 
    

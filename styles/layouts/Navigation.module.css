@@ -3,7 +3,7 @@
   /* The progress container (grey background) */
   .progresscontainer {
     width: 100vw;
-    height: 10px;
+    height: 7px;
     background:  #8E3FE2;
     position: fixed;
     z-index:99
@@ -14,7 +14,8 @@
     height: 10px;
     background: aliceblue;
     width: 0%;
-    z-index:99
+    z-index:99;
+    position:fixed
 
 
   }
@@ -50,19 +51,19 @@
  .logo{
   
 
-  background-color: var(--color-tertiary);
- top:1px;
+
+ top:13px;
   position:fixed;
   z-index: 99;
   transition: all 0.3s ease-in-out;
   border:2px solid blueviolet;
   border-radius:60px;
-  outline:2px solid green
+  
  
  }
  .logo:hover{
   outline: 1px solid var(blue);
-  margin-top:15px;
+
   border-radius:4px;
   background-color:#0e0716
 

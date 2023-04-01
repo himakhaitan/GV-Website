@@ -1,4 +1,18 @@
 /* Margins */
+.scroll{
+ 
+  position:fixed;
+
+  z-index:99;
+transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  top:4px;
+  background-color:'aliceblue';
+  width:100%;
+
+
+  
+}
+
 
 .margin-top-small {
   margin-top: 2rem;
