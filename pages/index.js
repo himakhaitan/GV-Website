@@ -1,16 +1,21 @@
+// Import Next Components
 import Head from "next/head";
+import Link from "next/link";
+
+// Importing Styles
 import classes from "../styles/Home.module.css";
-import Button from "../components/Button";
 
 // React Icons
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiInstagram, SiMaterialdesignicons } from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
+
+// Import Custom Components
 import Label from "../components/Label";
 import Social from "../components/Social";
-import Link from "next/link";
+import Button from "../components/Button";
 
 const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
   return (
@@ -33,6 +38,8 @@ const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
   );
 };
 
+
+// Defining Main Component
 export default function Home() {
   return (
     <>
