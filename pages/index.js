@@ -153,7 +153,7 @@ export default function Home() {
             </h2>
             <Link href='/'>
               <div className={classes.home_fifth_cta + " " + classes.home_cta}>
-                <h3 className='color-tertiary'>How bout'a Coffee?</h3>
+                <h3 className='color-tertiary'>How bout&#39;a Coffee?</h3>
               </div>
             </Link>
           </div>
