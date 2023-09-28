@@ -1,23 +1,16 @@
 import Head from "next/head";
 import classes from "../styles/Home.module.css";
 import Button from "../components/Button";
+
+// React Icons
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiInstagram } from "react-icons/si";
+import { SiInstagram, SiMaterialdesignicons } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
 import Label from "../components/Label";
 import Social from "../components/Social";
 import Link from "next/link";
-
-// const ServiceItem = ({ Icon, text }) => {
-//   return (
-//     <div className={classes.service_item}>
-//       <div className={classes.service_item_icon}>{Icon}</div>
-//       <h5 className={`color-tertiary ${classes.service_item_text}`}>{text}</h5>
-//     </div>
-//   );
-// };
 
 const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
   return (
