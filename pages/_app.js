@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navigation from "../layouts/Navigation";
 import "../styles/globals.css";
 import "../styles/helper.css";
