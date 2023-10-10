@@ -67,3 +67,12 @@
 .nav_link:hover::after {
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav_item_link {
+    display: none;
+  }
+}
