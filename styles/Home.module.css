@@ -470,3 +470,36 @@
 .home_clientele_head > p {
   width: 50%;
 }
+
+@media screen and (max-width: 480px) {
+  .home_first {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home_first_secondary {
+    justify-self: right;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .home_first_text {
+    text-align: right;
+    margin-top: 0rem !important;
+  }
+  .home_first_social {
+    display: none;
+  }
+  .home_first_cta {
+    margin-top: 2rem;
+  }
+
+  /* Second Section */
+  .home_second {
+    padding: 8rem 0rem 0 0rem;
+  }
+
+  .home_second_img {
+    border-radius: 8rem 8rem 0 0;
+  }
+}
