@@ -28,6 +28,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
 body {
   font-family: var(--font-primary);
   color: var(--color-primary);
