@@ -447,7 +447,7 @@
   background-color: var(--color-secondary);
 }
 .home_clientele_item:hover {
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 .home_clientele_item:hover::before {
   display: block;
@@ -519,7 +519,7 @@
     padding: 2rem;
   }
   .home_clientele_item:hover {
-    transform: scale(1)
+    transform: scale(1);
   }
   .home_clientele_item:hover::before {
     display: none;
@@ -528,7 +528,10 @@
     height: 5rem;
   }
   .home_clientele_head > h2,
-.home_clientele_head > p {
-  width: 100%;
-}
+  .home_clientele_head > p {
+    width: 100%;
+  }
+  .home_clientele_sec_text {
+    text-align: right;
+  }
 }
