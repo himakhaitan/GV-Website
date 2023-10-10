@@ -160,10 +160,10 @@ export default function Home() {
         <div className={classes.home_clientele}>
           <div className={classes.home_clientele_head}>
             <h2 className="color-tertiary">
-              Our <span className="color-secondary">Clientele</span>. Those who
+              Our <span className="color-secondary">Clientele</span>.</h2> <h3 className={"color-tertiary margin-top-small"}>Those who
               <span className="color-secondary"> trusted us </span>first.
-            </h2>
-            <p className="margin-top-small color-grey">
+            </h3>
+            <p className={"margin-top-medium color-grey " + classes.home_clientele_sec_text}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               non dolor tempus consectetur ipsum dolor sit amet, consectetur
               adipiscin.

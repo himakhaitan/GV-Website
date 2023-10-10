@@ -447,7 +447,7 @@
   background-color: var(--color-secondary);
 }
 .home_clientele_item:hover {
-  transform: scale(1.03)
+  transform: scale(1.03);
 }
 .home_clientele_item:hover::before {
   display: block;
@@ -501,5 +501,37 @@
 
   .home_second_img {
     border-radius: 8rem 8rem 0 0;
+  }
+  .home_second_img:hover {
+    transform: scale(1);
+    border-top: none;
+  }
+  /* Clients Section */
+  .home_clientele {
+    padding: 4rem;
+  }
+  .home_clientele_div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+  .home_clientele_item {
+    padding: 2rem;
+  }
+  .home_clientele_item:hover {
+    transform: scale(1);
+  }
+  .home_clientele_item:hover::before {
+    display: none;
+  }
+  .home_clientele_item > img {
+    height: 5rem;
+  }
+  .home_clientele_head > h2,
+  .home_clientele_head > p {
+    width: 100%;
+  }
+  .home_clientele_sec_text {
+    text-align: right;
   }
 }
