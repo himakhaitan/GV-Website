@@ -53,13 +53,12 @@ const Footer = ({}) => {
             Keep In <span className="color-secondary">Touch</span>
           </h3>
           <Image
-            className="margin-top-large"
-            src="/brand/logo-1080x1080.webp"
+            src="/brand/logo-full.png"
             alt="Geeky Vision Logo"
-            width={80}
-            height={80}
+            width={180}
+            height={180}
           />
-          <p className={`margin-top-small color-grey + ${classes.footer_text}`}>
+          <p className={`color-grey + ${classes.footer_text}`}>
             Where Identities Are Woven into the timeless Fabric of Brands
           </p>
           <div className={classes.footer_social + " margin-top-medium"}>
