@@ -111,3 +111,22 @@ textarea,
 select {
   font: inherit;
 }
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 8rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
