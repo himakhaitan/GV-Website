@@ -31,8 +31,8 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/brand/logo-1080x1080.png" />
       </Head>
       <main>
-        <Navigation />
-        <Component {...pageProps} />
+        {/* <Navigation />
+        <Component {...pageProps} /> */}
         <Footer />
       </main>
     </>
