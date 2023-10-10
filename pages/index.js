@@ -46,7 +46,7 @@ export default function Home() {
         <title>Geeky Vision</title>
         <meta
           name="description"
-          content="At Geeky Vision, we digitize ideas while sharing your vision."
+          content="Geeky Vision is your go-to media and web agency for expert Social Media Management, stunning Graphic Design and impressive Website Design. We blend geeky creativity with aesthetic finesse, delivering fun and engaging content that captivates your audience. Elevate your brand with our unique blend of expertise and creativity!"
         />
       </Head>
       <section className={classes.home}>
