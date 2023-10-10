@@ -534,4 +534,44 @@
   .home_clientele_sec_text {
     text-align: right;
   }
+  .home_fifth {
+    display: none;
+  }
+  /* Sixth Section */
+  .home_sixth {
+    padding: 4rem;
+  }
+  .home_sixth_header {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 4rem;
+  }
+  .home_sixth_head {
+    font-size: 5rem;
+  }
+  .home_sixth_labels {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .home_sixth_text {
+    text-align: left;
+  }
+
+  /* Display Section */
+  .home_sixth_display {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 4rem;
+  }
+  .home_sixth_two {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .home_sixth_img {
+    border-radius: 0rem 0rem 5rem 0rem;
+    height: 20rem;
+  }
+  /* .home_sixth_cta {
+    display: block;
+  } */
 }

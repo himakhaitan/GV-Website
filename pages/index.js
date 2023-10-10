@@ -199,7 +199,7 @@ export default function Home() {
         <div className={classes.home_sixth}>
           <div className={classes.home_sixth_header}>
             <div>
-              <h1 className="margin-bottom-large color-tertiary">
+              <h1 className={"margin-bottom-large color-tertiary " + classes.home_sixth_head}>
                 Best <span className="color-secondary">Projects</span>.
               </h1>
               <div className={classes.home_sixth_labels}>
