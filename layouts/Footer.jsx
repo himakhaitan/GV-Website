@@ -54,7 +54,7 @@ const Footer = ({}) => {
           </h3>
           <Image
             className="margin-top-large"
-            src="/brand/logo-1080x1080.png"
+            src="/brand/logo-1080x1080.webp"
             alt="Geeky Vision Logo"
             width={80}
             height={80}
