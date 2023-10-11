@@ -24,11 +24,32 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Geeky Vision</title>
+        <title>Geeky Vision | Home for Brand Creation</title>
         <meta
           name="description"
           content="Geeky Vision is your go-to media and web agency for expert Social Media Management, stunning Graphic Design and impressive Website Design. We blend geeky creativity with aesthetic finesse, delivering fun and engaging content that captivates your audience. Elevate your brand with our unique blend of expertise and creativity!"
         />
+        {/* Social Media */}
+        <meta property="og:title" content="Geeky Vision" />
+        <meta
+          property="og:url"
+          content="https://www.instagram.com/geekyvision/"
+        />
+        <meta
+          property="og:image"
+          content="https://geekyvision.in/brand/brand-image.png"
+        />
+        {/* Twitter */}
+        <meta name="twitter:title" content="Geeky Vision | Home for Brand Creation" />
+        <meta
+          name="twitter:description"
+          content="Where Identities Are Woven into the timeless Fabric of Brands."
+        />
+        <meta
+          name="twitter:image"
+          content="https://geekyvision.in/brand/brand-image.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={classes.home}>
         <div className={classes.home_first}>
