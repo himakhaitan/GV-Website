@@ -53,7 +53,7 @@ const Footer = ({}) => {
             Keep In <span className="color-secondary">Touch</span>
           </h3>
           <Image
-            src="/brand/logo-full.png"
+            src="/brand/logo-full.webp"
             alt="Geeky Vision Logo"
             width={180}
             height={180}

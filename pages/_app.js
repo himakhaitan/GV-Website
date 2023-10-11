@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
       </Script>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/brand/logo-1080x1080.png" />
+        <link rel="icon" href="/brand/logo-1080x1080.webp" />
       </Head>
       <main>
         <Navigation />

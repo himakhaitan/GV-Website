@@ -19,7 +19,7 @@ const Navigation = ({}) => {
       </div>
       <div className={classes.nav_item}>
         <Link href='/' className={classes.nav_logo}>
-          <Image  width='60' height='60' src='/brand/logo-1080x1080.png' />
+          <Image  width='60' height='60' src='/brand/logo-1080x1080.webp' />
         </Link>
       </div>
       <div className={classes.nav_item + " " + classes.nav_item_link}>
