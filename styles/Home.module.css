@@ -603,7 +603,7 @@
     display: none;
   }
   .service_bar_head {
-    line-height: 0;
+    line-height: 1;
   }
   .service_bar_head > span {
     font-size: 3rem;
