@@ -65,7 +65,7 @@ const Services = () => {
             <ServiceBar
               key={index}
               text={item.name}
-              image={item.image}
+              image={`/images/projects/${item.image}.webp`}
             />
           );
         })}

@@ -14,29 +14,29 @@ export const services = {
   design: [
     {
       name: "onE pAgER dEsIgn",
-      image: "",
+      image: "design/web",
     },
     {
       name: "logo dEsIGn",
-      image: "",
+      image: "design/boutique",
     },
     {
       name: "BRAndInG",
-      image: "",
+      image: "design/panda",
     },
     {
       name: "DIgItAl DEsIgn",
-      image: "",
+      image: "design/bummer",
     },
   ],
   development: [
     {
       name: "wEbsItE dEsIgn",
-      image: "",
+      image: "development/audacity",
     },
     {
       name: "woRdpREss dEvElopmEnt",
-      image: "",
+      image: "development/prateek",
     },
     // {
     //   name: "Mobile App Development",
@@ -44,25 +44,25 @@ export const services = {
     // },
     {
       name: "fuLL stAck dEvElopmEnt",
-      image: "",
+      image: "development/vistas",
     },
   ],
   marketing: [
     {
       name: "sociAl mEdiA mAnAgEmEnt",
-      image: "",
+      image: "marketing/fidget_games_banner",
     },
     {
       name: "contEnt cREAtion",
-      image: "",
+      image: "design/bummer",
     },
     {
       name: "community EngAgEmEnt",
-      image: "",
+      image: "marketing/fidget_games",
     },
     {
       name: "dAtA AnAlyTIcs",
-      image: "",
+      image: "marketing/geekyvision",
     },
   ],
 };
