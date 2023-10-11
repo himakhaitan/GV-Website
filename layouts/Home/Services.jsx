@@ -43,8 +43,8 @@ const Services = () => {
             <span className="color-secondary">.</span>
           </h1>
           <p className={classes.home_fourth_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
-            dolor tempus consectetur adipiscing elit. Aenean non dolor tempus.
+            Our services are more than just skills, they are the building blocks
+            of your brand&#39;s success story. Dive into a world of possibilities.
           </p>
         </div>
         <div className={classes.home_fourth_right}>

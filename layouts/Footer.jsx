@@ -81,21 +81,21 @@ const Footer = ({}) => {
         </div>
         <div className={classes.footer_secondary}>
           <div className={classes.footer_item}>
-            <Link href="/">
+            <Link href="https://wa.me/+917858046746">
               <h5 className={`color-tertiary ${classes.footer_item_text}`}>
                 FAQs
               </h5>
             </Link>
           </div>
           <div className={classes.footer_item}>
-            <Link href="/">
+            <Link href="/knowus.pdf">
               <h5 className={`color-tertiary ${classes.footer_item_text}`}>
                 Company
               </h5>
             </Link>
           </div>
           <div className={classes.footer_item}>
-            <Link href="/">
+            <Link href="#projects">
               <h5 className={`color-tertiary ${classes.footer_item_text}`}>
                 Projects
               </h5>

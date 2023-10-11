@@ -17,7 +17,7 @@ const Projects = ({}) => {
   };
 
   return (
-    <div className={classes.home_sixth}>
+    <div className={classes.home_sixth} id="projects">
       <div className={classes.home_sixth_header}>
         <div>
           <h1
@@ -40,8 +40,10 @@ const Projects = ({}) => {
           </div>
         </div>
         <p className={classes.home_sixth_text + " margin-bottom-medium"}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
-          dolor tempus consectetur ipsum dolor sit amet, consectetur adipiscin.
+          Our portfolio includes diverse ventures from startups to established
+          ventures, each project is a testament to our passion for creativity
+          and innovation. These projects are the stories of brands we&#39;ve
+          helped flourish, one innovative solution at a time.
         </p>
       </div>
       <div className={classes.home_sixth_display + " margin-top-large"}>

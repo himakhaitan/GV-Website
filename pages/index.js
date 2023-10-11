@@ -42,17 +42,19 @@ export default function Home() {
           </div>
           <div className={classes.home_first_secondary}>
             <p className={classes.home_first_text + " margin-top-large"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              non dolor tempus, tincidunt purus in, venenatis magna. Curabitur
-              scelerisque sem sed ex convallis ultricies. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia curae;
-              Integer tempor lorem ornare sagittis efficitur. Ut quis maximus
-              turpis. Sed molestie libero nunc, id tincidunt arcu egestas non.
+              At Geeky Vision, we redefine brands through the artistry of
+              Graphic Design, the functionality of Web Development, and the
+              power of Content Marketing. Trusted by industry pioneers, we craft
+              tailored solutions that transform concepts into compelling visual
+              narratives, intuitive digital platforms, and engaging content
+              strategies. Our dedicated team merges creativity with technical
+              finesse, giving your brand a center stage. Whether you&#39;re a
+              startup or an established enterprise, we got you.
             </p>
             <div className={classes.home_first_cta + " margin-bottom-medium"}>
               <Button
                 isLink={true}
-                href="/"
+                href="https://forms.gle/N2gnndekukPcsirk8"
                 isIcon={true}
                 theme="primary"
                 text="Get Started"
@@ -60,9 +62,22 @@ export default function Home() {
                 className="margin-right-medium"
               />
               <div className={classes.home_first_social}>
-                <Social href="/" theme="primary" Icon={FaTwitter} />
-                <Social href="/" theme="primary" Icon={SiInstagram} />
-                <Social href="/" theme="primary" Icon={FaLinkedinIn} />
+                <Social
+                  href="https://www.instagram.com/geekyvision/"
+                  theme="primary"
+                  Icon={SiInstagram}
+                />
+                <Social
+                  href="https://www.linkedin.com/company/geekyvision"
+                  theme="primary"
+                  Icon={FaLinkedinIn}
+                />
+
+                <Social
+                  href="https://twitter.com/geekyvision"
+                  theme="primary"
+                  Icon={FaTwitter}
+                />
               </div>
             </div>
           </div>
@@ -72,7 +87,7 @@ export default function Home() {
             className={classes.home_second_img}
             src="/images/display/home.webp"
           />
-          <Link href="/">
+          <Link href="/knowus.pdf">
             <div className={classes.home_second_cta + " " + classes.home_cta}>
               <h3 className="color-tertiary">Have a Look!</h3>
             </div>
@@ -122,9 +137,10 @@ export default function Home() {
                 classes.home_clientele_sec_text
               }
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              non dolor tempus consectetur ipsum dolor sit amet, consectetur
-              adipiscin.
+              The ones who trusted us first, sparking our passion for Graphic
+              Design, Web Development, and Content Marketing magic! Ready to
+              transform your brand journey with creativity and innovation? Join
+              the Geeky Vision family, where every pixel tells a story!
             </p>
           </div>
           <div className={classes.home_clientele_div + " margin-top-large"}>
