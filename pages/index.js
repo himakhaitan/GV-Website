@@ -2,6 +2,9 @@
 import Head from "next/head";
 import Link from "next/link";
 
+// Importing Data
+import { clients } from "../data/clientele";
+
 // Importing Styles
 import classes from "../styles/Home.module.css";
 
@@ -9,34 +12,12 @@ import classes from "../styles/Home.module.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
-import { BsArrowUpRight } from "react-icons/bs";
-import { TfiWorld } from "react-icons/tfi";
 
 // Import Custom Components
-import Label from "../components/Label";
 import Social from "../components/Social";
 import Button from "../components/Button";
-
-const ServiceBar = ({ text, image = "/images/display/home.jpeg" }) => {
-  return (
-    <>
-      <div className={classes.service_bar}>
-        <div>
-          <h3 className={classes.service_bar_head}>
-            {text}
-            <span>•</span>
-          </h3>
-        </div>
-        <div className={classes.service_bar_icon}>
-          <BsArrowUpRight />
-        </div>
-        <div className={classes.service_bar_img}>
-          <img src={image} />
-        </div>
-      </div>
-    </>
-  );
-};
+import Projects from "../layouts/Home/Projects";
+import Services from "../layouts/Home/Services";
 
 // Defining Main Component
 export default function Home() {
@@ -89,7 +70,7 @@ export default function Home() {
         <div className={classes.home_second}>
           <img
             className={classes.home_second_img}
-            src="/images/display/home.jpeg"
+            src="/images/display/home.webp"
           />
           <Link href="/">
             <div className={classes.home_second_cta + " " + classes.home_cta}>
@@ -107,39 +88,8 @@ export default function Home() {
             Discuss <span className="color-tertiary">YouR Ideas • </span>
           </h2>
         </div>
+        <Services />
 
-        <div className={classes.home_fourth}>
-          <div className={classes.home_fourth_prim + " margin-bottom-large"}>
-            <div className={classes.home_fourth_left}>
-              <h1 className={`color-tertiary margin-bottom-small`}>
-                <span className="color-secondary">Our </span>Services
-                <span className="color-secondary">.</span>
-              </h1>
-              <p className={classes.home_fourth_text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                non dolor tempus consectetur adipiscing elit. Aenean non dolor
-                tempus.
-              </p>
-            </div>
-            <div className={classes.home_fourth_right}>
-              <Label Icon={<TfiWorld />} text="Development" />
-              <Label Icon={<TfiWorld />} text="Design" />
-              <Label Icon={<TfiWorld />} text="Marketing" />
-              <Label Icon={<TfiWorld />} text="Management" />
-            </div>
-          </div>
-          <div className={classes.home_fourth_sec}>
-            <ServiceBar text="Web DEsIGn" image="/images/services/web.png" />
-            <ServiceBar
-              text="bRand DEsIGn"
-              image="/images/services/branddesign.png"
-            />
-            <ServiceBar
-              text="Graphic DEsIGn"
-              image="/images/services/graphicdesign.png"
-            />
-          </div>
-        </div>
         <div className={classes.home_fifth}>
           <div className={classes.home_fifth_container}>
             <h2>
@@ -160,140 +110,37 @@ export default function Home() {
         <div className={classes.home_clientele}>
           <div className={classes.home_clientele_head}>
             <h2 className="color-tertiary">
-              Our <span className="color-secondary">Clientele</span>.</h2> <h3 className={"color-tertiary margin-top-small"}>Those who
+              Our <span className="color-secondary">Clientele</span>.
+            </h2>{" "}
+            <h3 className={"color-tertiary margin-top-small"}>
+              Those who
               <span className="color-secondary"> trusted us </span>first.
             </h3>
-            <p className={"margin-top-medium color-grey " + classes.home_clientele_sec_text}>
+            <p
+              className={
+                "margin-top-medium color-grey " +
+                classes.home_clientele_sec_text
+              }
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               non dolor tempus consectetur ipsum dolor sit amet, consectetur
               adipiscin.
             </p>
           </div>
           <div className={classes.home_clientele_div + " margin-top-large"}>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/21by72.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/ivy.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/anujgotrich.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/audacity.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/maharani.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img src="/images/clients/fourpillars.png" />
-            </div>
-            <div className={classes.home_clientele_item}>
-              <img
-                src="/images/clients/1point6vc.png"
-                className={classes.invert}
-              />
-            </div>
+            {clients.map((client, index) => {
+              return (
+                <div key={index} className={classes.home_clientele_item}>
+                  <img
+                    src={`/images/clients/${client.image}.webp`}
+                    className={client.invert && classes.invert}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className={classes.home_sixth}>
-          <div className={classes.home_sixth_header}>
-            <div>
-              <h1 className={"margin-bottom-large color-tertiary " + classes.home_sixth_head}>
-                Best <span className="color-secondary">Projects</span>.
-              </h1>
-              <div className={classes.home_sixth_labels}>
-                <Label Icon={<TfiWorld />} text="Development" />
-                <Label Icon={<TfiWorld />} text="Design" />
-                <Label Icon={<TfiWorld />} text="Marketing" />
-                <Label Icon={<TfiWorld />} text="Management" />
-              </div>
-            </div>
-            <p className={classes.home_sixth_text + " margin-bottom-medium"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              non dolor tempus consectetur ipsum dolor sit amet, consectetur
-              adipiscin.
-            </p>
-          </div>
-          <div className={classes.home_sixth_display + " margin-top-large"}>
-            <Link
-              href="/"
-              className={classes.home_sixth_one + " " + classes.home_sixth_item}
-            >
-              <div>
-                <img
-                  className={classes.home_sixth_img}
-                  src="/images/services/design.jpeg"
-                />
-                <div className={classes.home_sixth_cta}>
-                  <BsArrowUpRight />
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="/"
-              className={classes.home_sixth_two + " " + classes.home_sixth_item}
-            >
-              <div>
-                <img
-                  className={classes.home_sixth_img}
-                  src="/images/services/webdesign.png"
-                />
-                <div className={classes.home_sixth_cta}>
-                  <BsArrowUpRight />
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="/"
-              className={
-                classes.home_sixth_three + " " + classes.home_sixth_item
-              }
-            >
-              <div>
-                <img
-                  className={classes.home_sixth_img}
-                  src="/images/services/graphicdesign.png"
-                />
-                <div className={classes.home_sixth_cta}>
-                  <BsArrowUpRight />
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="/"
-              className={
-                classes.home_sixth_four + " " + classes.home_sixth_item
-              }
-            >
-              <div>
-                <img
-                  className={classes.home_sixth_img}
-                  src="/images/services/branddesign.png"
-                />
-                <div className={classes.home_sixth_cta}>
-                  <BsArrowUpRight />
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="/"
-              className={
-                classes.home_sixth_five + " " + classes.home_sixth_item
-              }
-            >
-              <div>
-                <img
-                  className={classes.home_sixth_img}
-                  src="/images/services/web.png"
-                />
-                <div className={classes.home_sixth_cta}>
-                  <BsArrowUpRight />
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
+        <Projects />
       </section>
     </>
   );
