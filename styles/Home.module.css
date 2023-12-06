@@ -197,7 +197,7 @@
 .service_bar_head {
   color: var(--color-grey-light);
   font-family: var(--font-primary);
-  text-transform: capitalize;
+  text-transform: uppercase;
   user-select: none;
   line-height: 0;
   transition: all 0.2s ease-in-out;
