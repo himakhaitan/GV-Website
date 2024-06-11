@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Geeky Vision | Home for Brand Creation</title>
+        <title>Geeky Vision | Delivering Tech Excellence to Businesses</title>
         <meta
           name="description"
-          content="Geeky Vision is your go-to media and web agency for expert Social Media Management, stunning Graphic Design and impressive Website Design. We blend geeky creativity with aesthetic finesse, delivering fun and engaging content that captivates your audience. Elevate your brand with our unique blend of expertise and creativity!"
+          content="Geeky Vision is your trusted partner for comprehensive tech solutions. We specialize in taking on your business's tech load, offering expert Software Development, IT Support, and Custom Tech Solutions. We blend technical expertise with innovative solutions, ensuring your business operates smoothly and efficiently. Elevate your business with our unique blend of technical mastery and dedicated support!"
         />
         {/* Social Media */}
         <meta property="og:title" content="Geeky Vision" />
@@ -37,17 +37,20 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://geekyvision.in/brand/brand-image.png"
+          content="https://geekyvision.in/brand/brand-image.webp"
         />
         {/* Twitter */}
-        <meta name="twitter:title" content="Geeky Vision | Home for Brand Creation" />
+        <meta
+          name="twitter:title"
+          content="Geeky Vision | Home for Brand Creation"
+        />
         <meta
           name="twitter:description"
           content="Where Identities Are Woven into the timeless Fabric of Brands."
         />
         <meta
           name="twitter:image"
-          content="https://geekyvision.in/brand/brand-image.png"
+          content="https://geekyvision.in/brand/brand-image.webp"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -63,19 +66,18 @@ export default function Home() {
           </div>
           <div className={classes.home_first_secondary}>
             <p className={classes.home_first_text + " margin-top-large"}>
-              At Geeky Vision, we redefine brands through the artistry of
-              Graphic Design, the functionality of Web Development, and the
-              power of Content Marketing. Trusted by industry pioneers, we craft
-              tailored solutions that transform concepts into compelling visual
-              narratives, intuitive digital platforms, and engaging content
-              strategies. Our dedicated team merges creativity with technical
-              finesse, giving your brand a center stage. Whether you&#39;re a
-              startup or an established enterprise, we got you.
+              At Geeky Vision, we empower businesses through innovative Software
+              Development, robust IT Support, and tailored Tech Solutions.
+              Trusted by industry leaders, we transform your tech needs into
+              seamless, efficient operations and cutting-edge digital platforms.
+              Our dedicated team merges creativity with technical expertise,
+              ensuring your business stands out. Whether you're a startup or an
+              established enterprise, we've got you covered.
             </p>
             <div className={classes.home_first_cta + " margin-bottom-medium"}>
               <Button
                 isLink={true}
-                href="https://forms.gle/N2gnndekukPcsirk8"
+                href="https://wa.me/+917632849424"
                 isIcon={true}
                 theme="primary"
                 text="Get Started"
@@ -108,11 +110,11 @@ export default function Home() {
             className={classes.home_second_img}
             src="/images/display/home.webp"
           />
-          <Link href="/knowus.pdf">
+          {/* <Link href="/knowus.pdf"> */}
             <div className={classes.home_second_cta + " " + classes.home_cta}>
               <h3 className="color-tertiary">Have a Look!</h3>
             </div>
-          </Link>
+          {/* </Link> */}
         </div>
         <div className={classes.home_third}>
           <h2 className={"color-secondary " + classes.home_third_text}>

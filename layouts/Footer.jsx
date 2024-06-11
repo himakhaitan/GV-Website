@@ -59,7 +59,7 @@ const Footer = ({}) => {
             height={180}
           />
           <p className={`color-grey + ${classes.footer_text}`}>
-            Where Identities Are Woven into the timeless Fabric of Brands
+            Where Ideas Are Crafted into Lasting Tech Legacies
           </p>
           <div className={classes.footer_social + " margin-top-medium"}>
             <Social
