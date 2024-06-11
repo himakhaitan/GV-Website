@@ -27,7 +27,7 @@ export default function Home() {
         <title>Geeky Vision | Delivering Tech Excellence to Businesses</title>
         <meta
           name="description"
-          content="Geeky Vision is your trusted partner for comprehensive tech solutions. We specialize in taking on your business's tech load, offering expert Software Development, IT Support, and Custom Tech Solutions. We blend technical expertise with innovative solutions, ensuring your business operates smoothly and efficiently. Elevate your business with our unique blend of technical mastery and dedicated support!"
+          content="Geeky Vision is your trusted partner for comprehensive tech solutions. We specialize in taking on your business&apos;s tech load, offering expert Software Development, IT Support, and Custom Tech Solutions. We blend technical expertise with innovative solutions, ensuring your business operates smoothly and efficiently. Elevate your business with our unique blend of technical mastery and dedicated support!"
         />
         {/* Social Media */}
         <meta property="og:title" content="Geeky Vision" />
@@ -71,8 +71,8 @@ export default function Home() {
               Trusted by industry leaders, we transform your tech needs into
               seamless, efficient operations and cutting-edge digital platforms.
               Our dedicated team merges creativity with technical expertise,
-              ensuring your business stands out. Whether you're a startup or an
-              established enterprise, we've got you covered.
+              ensuring your business stands out. Whether you&apos;re a startup or an
+              established enterprise, we&apos;ve got you covered.
             </p>
             <div className={classes.home_first_cta + " margin-bottom-medium"}>
               <Button
